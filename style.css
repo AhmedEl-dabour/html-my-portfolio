@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+
+  height: 4rem;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555555;
+  text-decoration: none;
+}
+
+.nav-logo::first-letter {
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: #35b8e0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: bold;
+  color: #545454;
+  text-decoration: none;
+  position: relative;
+}
+
+.header-container {
+  max-width: 1600px;
+  margin: 5rem auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .introduction {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.header-container .img-container {
+  width: 50%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 350px;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+.header-container .img-container img {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 350px;
+  min-height: 350px;
+  border-radius: 0.8rem;
+  box-shadow: 0px 3px 10px hsla(0, 0%, 0%, 0.1);
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.introduction h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #20687e;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.introduction p {
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.about-container {
+  max-width: 1600px;
+  margin: 5rem auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #545454;
+}
+
+.about-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20687e;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.about-container .about-body {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-container .about-body p {
+  width: 100%;
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.line-divider {
+  width: 75%;
+  height: 0.1rem;
+  background: #e6e6e6;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15rem;
+}
+
+.why-apply-container {
+  max-width: 1600px;
+  margin: 5rem auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #545454;
+}
+
+.why-apply-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20687e;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.why-apply-container .why-apply-body {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.why-apply-container .why-apply-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.line-divider {
+  width: 75%;
+  height: 0.1rem;
+  background: #e6e6e6;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15rem;
+}
+
+.projects-container {
+  max-width: 1600px;
+  margin: 5rem auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #545454;
+}
+
+.projects-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20687e;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.contact-us-container {
+  max-width: 1600px;
+  margin: 5rem auto;
+  padding: 0 200px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #545454;
+}
+
+.contact-us-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20687e;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.contact-us-body {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  font-size: 1.15rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #545454;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.2rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+
+.form-group input {
+  width: 100%;
+  height: 3rem;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #585858;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 10rem;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #585858;
+  max-width: 100%;
+  max-height: 120px;
+  min-width: 100%;
+  min-height: 120px;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  background: #20687e;
+  color: #fff;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.why-apply-container a,
+.why-apply-container a:hover,
+.why-apply-container a:visited,
+.why-apply-container a:active {
+  color: #20687e;
+}
